@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Re-cycle contact page">
+  <meta name="keywords" content="re-cycle contact, contactpage, tours, booking">
+  <title>Re-Cycle | Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header id="header-one">
+    <div class="container">
+      <div class="upper-textline"><i class="fa fa-bicycle"></i> BOOK YOUR TOUR TODAY AND GET 10% OFF!</div>
+      <div class="logo">
+        <img src="
+          images/logo.png" alt="Bike logo">ReCycle
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+  <!--Header small screen-->
+  <header id="header-two">
+    <div class="small-nav-container">
+      <div class="logo">
+        <img src="
+        images/logo.png" alt="bike logo">ReCycle
+      </div>
+      <div id="nav">
+        <a href="home.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="smallNavigation()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <!--Main content-->
+  <main>
+    <div class="flex-container-contact">
+      <section class="contact-one">
+        <div class="contact-form-container">
+          <h2>Booking</h2>
+          <div id="validMessage"></div>
+          <form id="contact-form" action="/action_page.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+            <div class="formValidation-error" id="nameError">Name is required</div>
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Your surname..">
+            <div class="formValidation-error" id="surNameError">Surname is required</div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+            <div class="formValidation-error" id="emailError">Invalid email address</div>
+            <label for="tour">Tour</label>
+            <select id="tour" name="tour">
+              <option value="citytour">City tour</option>
+              <option value="oslofjord">Oslofjord</option>
+              <option value="ekeberg">Ekeberg</option>
+              <option value="operahouse">Opera house</option>
+              <option value="bygdøy">Bygdøy</option>
+              <option value="akerbrygge">Aker brygge</option>
+            </select>
+            <label for="number">Number of people</label>
+            <input type="text" id="number" name="number" placeholder="Number of people..">
+            <div class="formValidation-error" id="numberError">Please enter number of people</div>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write here.."></textarea>
+            <input class="button" type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+      <section class="contact-two">
+        <div class="contact">
+          <h2>RE-CYCLE OFFICE OSLO</h2>
+          <p>Phone: +47 666 66 666</p>
+          <p>Adress: Osloveien 337, 0448 Oslo</p>
+          <p>Email: <a href="mailto:thalia.rebecca@gmail.com">Info@recycle.no</a></p>
+        </div>
+        <img class="contactimg" src="images/bike52.png" alt="two people on bikes">
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-box">
+      <div class="box-2-inner">
+        <div class="f-box-1">
+          <nav class="footer-nav">
+            <h4>NAVIGATION</h4>
+            <a href="home.html">Home</a>
+            <a href="routes.html">Routes</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="f-box-2">
+          <h4>CONTACT</h4>
+          <a href="mailto:thalia.rebecca@gmail.com">Info@recycle.no</a>
+          <p>+47 666 66 666</p>
+          <div class="social-media">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
+          </div>
+        </div>
+        <div class="f-box-3">
+          <form class="subscribe-form" action="/action_page.php">
+            <div class="form-container-text">
+              <h3>NEWSLETTER</h3>
+              <p>Sign up below and get the latest news, special offers and more!</p>
+              <input class="sub-input" type="text" placeholder="Email address" name="mail" required>
+              <input class="sub-button" type="submit" value="Subscribe">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/navigation.js"></script>
+  <script src="js/contactForm.js"></script>
+</body>
+
+</html>
